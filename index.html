@@ -3,12 +3,6 @@ import boto3
 import logging
 import csv
 
-logger = logging.getLogger()
-logger.setLevel(logging.INFO)
-
-s3_client = boto3.client('s3')
-
-def lambda_handler(event, context):
     # Log the received event
     logger.info("Received event: " + json.dumps(event, indent=2))
 
